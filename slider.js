@@ -2,32 +2,42 @@ var slider = document.querySelector("#photo");
 var figcaption= document.querySelector("#fotoDescription");
 
 var number = Math.floor(Math.random()*5)+1;
+var timer1 = 0; /*timer rozpoczynający odliczanie czasu dla bieżącego slide*/
 
 function changeSlide(){
+    clearTimeout(timer1);
     number++;
     if (number > 5) {number = 1;}
 
     var file = "<img src=\"img/image"+number+".jpg\" id = \"photo\" alt=\"images from Greece\" />";
     slider.innerHTML = file;
-    //setTimeout("changeSlide()" , 3000);
+    timer1=setTimeout("changeSlide()" , 3000);
 }
 
 function chooseSlideNum(num){
+    clearTimeout(timer1);
     number = num -1;
     changeSlide();
     }
 
 
 function nextSlide(){
-changeSlide();
+    clearTimeout(timer1);
+    changeSlide();
 }
 
 function previousSlide(){
-    number--;
+    clearTimeout(timer1);
+    number=number-1;
     if (number < 1) {number = 5;}
     var file = "<img src=\"img/image"+number+".jpg\" id = \"photo\" alt=\"images from Greece\" />";
     slider.innerHTML = file;
+    timer1=setTimeout("changeSlide()" , 3000);
+    /*tu taka sama nazwa timera, żeby przy wywołaniu innej funkcji się zerował*/
     }
+    
+    
+
 
 console.log(number);
 
