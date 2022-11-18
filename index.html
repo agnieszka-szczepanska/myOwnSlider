@@ -15,19 +15,19 @@
     </header>
     <main>
         <div id="top-row">
-            <div id="arrowLeft" class="arrow"><img src="img/arrowLeft.png" width=" 70px" alt="arrow picture"></div>
+            <div id="arrowLeft" class="arrow"><img src="img/arrowLeft.png" width=" 70px" alt="arrow picture" onclick="previousSlide()"></div>
                 <figure>
                     <figcaption id="fotoDescription">Panorama Kefalonii</figcaption>
                     <div id ="photo">                
                 </figure>
-            <div id="arrowRight" class="arrow"><img src="img/arrowRight.png" width=" 70px" alt="arrow picture"></div>
+            <div id="arrowRight" class="arrow"><img src="img/arrowRight.png" width=" 70px" alt="arrow picture" onclick="nextSlide()"></div>
         </div>
         <div id="bottom-row">        
-            <div id="dot1" class="dots"></div>
-            <div id="dot2" class="dots"></div>
-            <div id="dot3" class="dots"></div>
-            <div id="dot4" class="dots"></div>
-            <div id="dot5" class="dots"></div>
+            <div id="dot1" class="dots" onclick="chooseSlideNum(1)"></div>
+            <div id="dot2" class="dots" onclick="chooseSlideNum(2)"></div>
+            <div id="dot3" class="dots" onclick="chooseSlideNum(3)"></div>
+            <div id="dot4" class="dots" onclick="chooseSlideNum(4)"></div>
+            <div id="dot5" class="dots" onclick="chooseSlideNum(5)"></div>
         </div>
     </main>
     <br><br><br>

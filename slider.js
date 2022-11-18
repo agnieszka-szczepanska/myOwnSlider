@@ -15,10 +15,25 @@ function changeSlide(){
     if (number > 5) {number = 1;}
 
     var file = "<img src=\"img/image"+number+".jpg\" id = \"photo\" alt=\"images from Greece\" />";
-    document.getElementById("photo").innerHTML = file;
-    setTimeout("changeSlide()" , 3000);
- 
+    slider.innerHTML = file;
+    //setTimeout("changeSlide()" , 3000);
 }
 
-console.log(number); 
+function chooseSlideNum(num){
+    number = num -1;
+    changeSlide();
+    }
 
+
+function nextSlide(){
+changeSlide();
+}
+
+function previousSlide(){
+    number--;
+    if (number < 1) {number = 5;}
+    var file = "<img src=\"img/image"+number+".jpg\" id = \"photo\" alt=\"images from Greece\" />";
+    slider.innerHTML = file;
+    }
+
+console.log(number);
