@@ -17,6 +17,8 @@ body {background-color: gray;
         margin: 4px;
         cursor: pointer;
     }
+.dots:hover { background-color: darkblue;
+}
 .arrow { cursor: pointer;
         
     }
@@ -51,3 +53,5 @@ footer {color: rgb(48, 47, 47);
         font-size: 15px;
 }
 .notActive {display: none;}
+.dots.notActive {display: block;}
+.dots.active {background-color:darkblue;}
