@@ -1,9 +1,10 @@
 * { box-sizing: border-box; }
-body {background-color: gray;
+body {background-color: rgb(128, 128, 128);
 }
 
 #wrapper {background-color: white;
         width: 70%;
+        min-width: 400px;
         margin: auto;
         min-height: 90vh;
         box-shadow: 10px 10px 10px black;
@@ -42,7 +43,11 @@ body {background-color: gray;
 figcaption {display: flex;
             justify-content: center;
             color: rgb(48, 47, 47);
-            }
+            } 
+#figcaptions {
+    height: 30px;
+}
+            
 h1 { font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(48, 47, 47);
     text-align: center;

@@ -13,7 +13,8 @@ function changeSlide(){
     number++;
     if (number > 5) {number = 1;}
 
-    var file = "<img src=\"img/image"+number+".jpg\" id = \"photo\" alt=\"images from Greece\" />";
+    var file = "<a href=\"img/image"+number+".jpg\" target=\"_blank\"><img src=\"img/image"+number+".jpg\" id = \"photo\" alt=\"images from Greece\" /></a>"
+    
     slider.innerHTML = file;
     $("#photo").fadeIn(500);
     changeFigcaption();
@@ -102,12 +103,7 @@ console.log(number);
     /*
     
     DO ZASTANOWIENIA CZY PRZY DOTS AND ARROWS ZROBIC WYGASZANIE
-
-    - kolorowa kropka, gdy jest aktywna
     - RESPONSIVE WEB DESIGN- ZMIANA WIELKOŚCI W ZAL. OD EKRANU ITP*/
-
-
-
 
 /*PRZETESTOWAĆ CZEMU NIE DZIAŁA!
 function changeFigcaption(){

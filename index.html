@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
+    <title>Zdjęcia z Kefalonii</title>
     <link rel="stylesheet" href="slider.css">
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
@@ -12,18 +12,20 @@
 <body onload = "changeSlide()">
 <div id="wrapper">
     <header>
-        <h1>Pokaz slajdów - Grecja</h1>
+        <h1>Kefalonia- pokaz slajdów</h1>
     </header>
     <main>
         <div id="top-row">
             <div id="arrowLeft" class="arrow"><img src="img/arrowLeft.png" width=" 70px" alt="arrow picture"></div>
                 <figure>
+                    <div id="figcaptions">
                     <figcaption id="fotoDescription1" class="notActive">Panorama Kefalonii</figcaption>
                     <figcaption id="fotoDescription2" class="notActive">Surowy, górzysty krajobraz wyspy</figcaption>
                     <figcaption id="fotoDescription3" class="notActive">Jaskinia Melissani</figcaption>
                     <figcaption id="fotoDescription4" class="notActive">Plaża Myrtos</figcaption>
                     <figcaption id="fotoDescription5" class="notActive">Błękit wody i kamieniste wybrzeże Kefalonii</figcaption>
-                    <div id ="photo">                
+                    </div>
+                    <div id ="photo"></div>            
                 </figure>
             <div id="arrowRight" class="arrow"><img src="img/arrowRight.png" width=" 70px" alt="arrow picture"></div>
         </div>
@@ -32,11 +34,11 @@
             <div id="dot2" class="dots notActive"></div>
             <div id="dot3" class="dots notActive"></div>
             <div id="dot4" class="dots notActive"></div>
-            <div id="dot5" class="dots notActive"></div>
+            <div id="dot5" class="dots "></div>
         </div>
     </main>
     <br><br><br>
-    <footer> Przygotowała ASz</footer>
+    <footer>Aby uzyskać więcej informacji na temat Kefalonii kliknij <a href="https://pl.wikipedia.org/wiki/Kefalinia"  target="_blank">tutaj.</a></footer>
 </div>
 <script type="text/javascript" src="slider.js"></script> 
 </body>
