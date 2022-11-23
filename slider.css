@@ -1,32 +1,25 @@
 * { box-sizing: border-box; }
-body {background-color: rgb(128, 128, 128);
+body {
+    background-color: white;
+    background: linear-gradient(45deg, black, #24517D);
+        
 }
 
-#wrapper {background-color: white;
-        width: 70%;
-        min-width: 400px;
-        margin: auto;
-        min-height: 90vh;
-        box-shadow: 10px 10px 10px black;
-        padding: 10px;
-        }
-        
 .dots { width: 12px;
         height:12px;
         border-radius: 50%;
-        background-color: rgb(48, 47, 47);
+        background-color: white;
         margin: 4px;
         cursor: pointer;
     }
-.dots:hover { background-color: darkblue;
-}
+
 .arrow { cursor: pointer;
         
     }
 #photo {box-shadow: 10px 10px 10px black;
         border: 1px solid black;
         display: block;
-        width:400px;
+        width:500px;
         max-width: 100%;
         height: auto;
         }
@@ -42,21 +35,25 @@ body {background-color: rgb(128, 128, 128);
         
 figcaption {display: flex;
             justify-content: center;
-            color: rgb(48, 47, 47);
+            color: white;
+            font-size: 20px;
             } 
 #figcaptions {
     height: 30px;
 }
             
-h1 { font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(48, 47, 47);
+h1 {font-family: 'Space Mono', monospace;
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    color: white;;
     text-align: center;
+    text-shadow: 2px 2px black;
 }
 
-footer {color: rgb(48, 47, 47);
+footer {color: white;;
         text-align: center;
         font-size: 15px;
 }
 .notActive {display: none;}
 .dots.notActive {display: block;}
-.dots.active {background-color:darkblue;}
+.dots.active {background-color:black;}
