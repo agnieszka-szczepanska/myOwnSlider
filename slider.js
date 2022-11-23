@@ -84,15 +84,6 @@ function hideDotColor(){
 arrowLeft.addEventListener("click", previousSlide);
 arrowRight.addEventListener("click", nextSlide);
 
-/* With .onclick you can use one function
-
-for (let i=1; i<=5; i++){
-    document.querySelector("#dot"+i).onclick = function(){
-        chooseSlideNum(i);
-    };
-}
-*/
-
 for (let i=1; i<=5; i++){
     document.querySelector("#dot"+i).addEventListener("click",function(){
         chooseSlideNum(i);})
@@ -100,18 +91,6 @@ for (let i=1; i<=5; i++){
             
 console.log(number);
 
-    /*
-    
-    DO ZASTANOWIENIA CZY PRZY DOTS AND ARROWS ZROBIC WYGASZANIE
-    - RESPONSIVE WEB DESIGN- ZMIANA WIELKOŚCI W ZAL. OD EKRANU ITP*/
-
-/*PRZETESTOWAĆ CZEMU NIE DZIAŁA!
-function changeFigcaption(){
-    var activeElement = document.querySelector(".active");
-    activeElement.classList.remove("active");
-    document.querySelector('#fotoDescription'+ number).classList.add("active");
-};
-*/
 
 
 
